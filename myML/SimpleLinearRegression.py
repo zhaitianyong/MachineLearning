@@ -1,5 +1,5 @@
 import numpy as np
-from metrics import r2_score
+from .metrics import r2_score
 
 class SimpleLinearRegression:
     def __init__(self):
