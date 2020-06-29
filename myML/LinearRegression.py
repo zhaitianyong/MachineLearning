@@ -1,5 +1,5 @@
 import numpy as np
-from .metrics import r2_score
+from metrics import r2_score
 
 
 class LinearRegression:
@@ -16,7 +16,7 @@ class LinearRegression:
         self.interception_ = self._theta[0]
 
     def score(self, X_test, y_test):
-        y_predict = self.predict(X_test, y_test)
+        y_predict = self.predict(X_test)
         return r2_score(y_test, y_predict)
 
     def predict(self, X_predict):
